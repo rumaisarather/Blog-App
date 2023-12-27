@@ -1,0 +1,70 @@
+.Sidebar{
+    flex:3;
+    margin: 20px;
+    padding-bottom: 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about{
+    margin-right:15px;
+    padding:10px;
+    text-align: center;
+
+}
+.Title{
+    margin:10px;
+    padding: 9px;
+    width:90%;
+    border-top: 1px solid #a7a7a7;
+    border-bottom: 1px solid #a7a7a7;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #222;
+    text-align: center;
+
+}
+.about img{
+    width: 80%;
+    height:120px;
+    padding:15px;
+}
+.about p{
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+}
+.category{
+    margin-right:15px;
+    margin-bottom: 10px;
+    padding:10px;
+    text-align: center;
+}
+.sidebarList{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.sidebarListItem{
+    display:inline-block;
+    width:50%;
+    margin-top: 15px;
+    color: black;
+    cursor: pointer;
+}
+.social{
+    margin-top: 25px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.socialIcon{
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    color:black;
+}

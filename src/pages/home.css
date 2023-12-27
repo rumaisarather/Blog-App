@@ -1,0 +1,21 @@
+.main img{
+    width:100%;
+    height:100vh;
+    padding:10px;
+}
+.Home{
+    display: flex;
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lora',serif;
+    color: black;
+    align-items: center;
+
+}
+.blogs{
+    position: absolute;
+    top:8%;
+    font-size: 100px;
+}
