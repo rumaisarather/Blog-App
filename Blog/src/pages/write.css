@@ -37,8 +37,8 @@ position: relative;
 }
 .writeSubmit{
     position: absolute;
-    top:20px;
-    right:80px;
+    top:150px;
+    right:40px;
     color:aliceblue;
     background-color: green;
     padding: 10px;
@@ -54,4 +54,12 @@ font-size: 16px;
     height:350px;
     border-radius: 10px;
     object-fit: cover;
+}
+
+@media screen and (max-width:479px){
+    .writeSubmit{
+        position: absolute;
+        top:200px;
+        
+    }
 }

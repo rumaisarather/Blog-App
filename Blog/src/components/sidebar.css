@@ -9,14 +9,14 @@
     align-items: center;
 }
 .about{
-    margin:10px;
+    margin:20px;
     padding:10px;
     text-align: center;
     justify-content: center;
 
 }
 .Title{
-    margin-top:20px;
+    margin-top:30px;
     padding: 15px;
     width:50%;
     border-top: 1px solid #a7a7a7;
@@ -70,4 +70,23 @@
     margin-left: 10px;
     cursor: pointer;
     color:black;
+}
+
+@media screen and (max-width:767px){
+    .Sidebar{
+        flex:3;
+        margin-top: 20px;
+        padding: 7px;
+        background-color: #a7a7a7;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:479px){
+    .sidebar{
+        flex:1;
+    
+    }
 }

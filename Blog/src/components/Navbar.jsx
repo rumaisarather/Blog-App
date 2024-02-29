@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import "./navbar.css";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../Assets/user.jpg";
 import { Context } from "../context/Context";
-import { useRef, useContext } from "react";
+import { useState, useContext } from "react";
 
 function Navbar() {
+const [showMediaIcons, setShowMediaIcons] = useState(false);
+const handleHamburgerClick =()=>{
+  setShowMediaIcons((prev)=> !prev);
+};
 
   const { user, dispatch } = useContext(Context);
   const handleLogout =()=>{
@@ -42,7 +46,19 @@ function Navbar() {
           )
         }
         <i className="search fas fa-search"></i>
+        </div>
+      <div className={`hamburger-menu ${showMediaIcons ? 'active': ""}`} onClick={handleHamburgerClick}>
+          <GiHamburgerMenu/>
       </div>
+      
+        <div className="dropdown">
+          <a href="/" className="dropdown-item">My Blog </a>
+          <a href="/Write" className="dropdown-item">Write </a>
+          <a href="/Login" className="dropdown-item">Login </a>
+          <a href="/Register" className="dropdown-item">Register </a>
+          <a href="#" className="dropdown-item" onClick={handleLogout}>{user && "logout"}</a>
+        </div>
+        
       </div>
   );
 }

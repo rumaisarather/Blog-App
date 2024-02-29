@@ -8,3 +8,25 @@
     border-radius:15px;
      }
     
+     @media screen and (max-width:767px){
+        .navbar{
+            height: 40px;
+            display: flex;
+    }
+    .main img{
+        width: 150%;
+        height:100vh;
+    }
+    
+    }
+     @media screen and (max-width:479px){
+        .navbar{
+            height: 40px;
+            display: flex;
+    }
+    .main img{
+        width: 180%;
+        height:100vh;
+    }
+    
+    }    
