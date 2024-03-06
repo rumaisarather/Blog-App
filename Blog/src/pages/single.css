@@ -1,7 +1,11 @@
 .single{
     display: flex;
 }
- 
+@media screen and (max-width:576px){
+    .single{
+        display: block;
+    }
+}
 @media screen and (max-width:479px){
     .single{
         display: block;

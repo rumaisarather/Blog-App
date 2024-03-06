@@ -6,7 +6,8 @@
     font-family: 'Varela Round',sans-serif;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: relative;
+    top:10px;
 
 }
 .leftSide,.rightSide{
@@ -90,6 +91,8 @@
 .navbar{
     height: 70px;
     display: flex;
+    top:10px;
+    position: relative;
 }
  .hamburger-menu{
     display: none;
@@ -100,16 +103,20 @@
     .navbar{
         height: 70px;
         display: flex;
+        position: relative;
+        top:10px;
     
 }
 .hamburger-menu{
     display: none;
 } 
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     .navbar{
         height: 50px;
         display: flex;
+        position: relative;
+        top:10px;
     }
     .center{
         display: none;
@@ -160,6 +167,8 @@
     .navbar{
         height: 40px;
         display: flex;
+        position: relative;
+        top:10px;
 }
 .main img{
     width: 150%;

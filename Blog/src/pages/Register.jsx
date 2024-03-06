@@ -42,7 +42,7 @@ setError(true);
       </form>
       <button className="registerLoginButton">
       <Link className="link" to ="/Login"> Login</Link></button>
-      {error && <span style={{color:"red", marginTop:"10px"}}> Something went wrong!</span>}
+      {error && <span style={{color:"red", marginTop:"20px"}}> Something went wrong!</span>}
       </div>
   );
 }

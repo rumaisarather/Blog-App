@@ -1,6 +1,11 @@
 .post{
     width: 400px;
     margin:15px 25px 40px 25px;
+    box-shadow:  2px 5px  2px 5px  #e7d6d6;
+    border:2px solid #e7d6d6;
+    border-radius: 20px;
+    padding:10px;
+
 }
 .postImg{
     width:100%;
@@ -12,6 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5px;
 }
 .postCat{
     font-family: "varela round",sans-serif;
@@ -20,7 +26,7 @@
     text-align: justify;
     color:#be9656;
     line-height: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -34,7 +40,7 @@
     font-family: "lora",serif;
     font-size: 13px;
     color:grey;
-    margin-top: 15px;
+    margin-top: 5px;
     font-style: italic
 
 }
@@ -51,4 +57,75 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+}
+@media screen and (max-width:1200px){
+    .post{
+    width: 300px;
+    margin:15px 25px 40px 25px;
+    box-shadow:  2px 5px  2px 5px  #e7d6d6;
+    border:2px solid #e7d6d6;
+    border-radius: 20px;
+    padding:10px;
+}
+}
+@media screen and (max-width:992px){
+    .post{
+    width: 200px;
+    margin:15px 20px 30px 20px;
+    box-shadow:  2px 5px  2px 5px  #e7d6d6;
+    border:2px solid #e7d6d6;
+    border-radius: 20px;
+    padding:5px;
+}
+.title{
+    font-family: 'Josefin',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+}
+.postDate{
+     margin-top:0px;
+     font-size: 10px;
+}
+.postDesc{
+    font-family:"varela round",sans-serif;
+    font-size: 12px;
+    word-spacing: normal;
+}
+}
+@media screen and (max-width:769px){
+        .post{
+            width: 300px;
+            margin:15px 20px 30px 20px;
+            box-shadow:  2px 3px  2px 3px  #e7d6d6;
+            border:2px solid #e7d6d6;
+            border-radius: 20px;
+            padding:5px;
+        }
+        .postDesc{
+            font-family:"varela round",sans-serif;
+            font-size: 12px;
+            word-spacing: normal;
+            padding:5px;
+    }
+}
+@media screen and (max-width:576px){
+    .post{
+        width: 300px;
+        margin:15px 20px 30px 20px;
+        box-shadow:  2px 3px  2px 3px  #e7d6d6;
+        border:2px solid #e7d6d6;
+        border-radius: 20px;
+        padding:5px;
+    }
+}
+@media screen and (max-width:480px){
+    .post{
+        width: 400px;
+        margin:15px 20px 30px 20px;
+        box-shadow:  2px 3px  2px 3px  #e7d6d6;
+        border:2px solid #e7d6d6;
+        border-radius: 20px;
+        padding:5px;
+    }
 }

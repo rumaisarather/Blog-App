@@ -5,7 +5,7 @@
 position: relative;
 }
 .writeFormGroup{
-    margin-left: 150px;
+    margin-left: 250px;
     display: flex;
     align-items: center;
     
@@ -56,10 +56,29 @@ font-size: 16px;
     object-fit: cover;
 }
 
-@media screen and (max-width:479px){
+@media screen and (max-width:480px){
     .writeSubmit{
         position: absolute;
         top:200px;
         
     }
+    .writeFormGroup{
+        margin-left: 120px;
+        display: flex;
+        align-items: center;
+        
+    }
+}
+@media screen and (max-width:922px){
+    .writeSubmit{
+        position: relative;
+        top:150px;
+        right:40px;
+        }
+.writeInput{
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 100vw;
+}
 }

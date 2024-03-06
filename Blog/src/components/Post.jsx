@@ -1,11 +1,19 @@
 import "./post.css";
 import blog from "../Assets/code.jpg";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 function Post({ post }) {
-  const PF = "http://localhost:3000/images/";
+  const PF = "http://localhost:3000/images/"
+useEffect(()=> {
+AOS.init({duration: 2000});
+},[]);
+   
+
   return (
-    <div className="post">
+     <div className="post" data-aos="flip-right">
       {post.photo && (
         <img className="postImg" src={PF + post.photo} alt="" />
       )}

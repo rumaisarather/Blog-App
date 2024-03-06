@@ -14,7 +14,13 @@ export const Context = createContext(INITIAL_STATE);
 export const ContextProvider = ({ children }) => {
     const [state, dispatch] = useReducer(Reducer, INITIAL_STATE);
     useEffect(() => {
-localStorage.setItem("user", JSON.stringify(state.user));
+        // try{
+        //     const parseData =JSON.parse
+            localStorage.setItem("user", JSON.stringify(state.user));
+        // }catch(error){
+        //     console.error('Error parsing json;',error);
+        // }
+
     }, [state.user]);
 
     return (

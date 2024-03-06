@@ -41,7 +41,7 @@ background-color: lightcoral;
 .loginRegisterButton{
     position: absolute;
     font-size: 18px;
-    top:80px;
+    top:140px;
     right: 50px;
     background-color: green;
     cursor: pointer;

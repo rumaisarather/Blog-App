@@ -1,5 +1,5 @@
 .header{
-    margin-top: 20px;
+    margin: 30px;
 }
 .main img{
     width:100%;
@@ -10,22 +10,33 @@
     
      @media screen and (max-width:767px){
         .navbar{
-            height: 40px;
+            height: 30px;
             display: flex;
     }
     .main img{
-        width: 150%;
+        width: 130%;
         height:100vh;
     }
     
     }
-     @media screen and (max-width:479px){
+    @media screen and (max-width:576px){
+        .navbar{
+            height: 30px;
+            display: flex;
+    }
+    .main img{
+        width: 140%;
+        height:100vh;
+    }
+    
+    }    
+     @media screen and (max-width:480px){
         .navbar{
             height: 40px;
             display: flex;
     }
     .main img{
-        width: 180%;
+        width: 175%;
         height:100vh;
     }
     

@@ -6,7 +6,8 @@ import { useContext, useState, useEffect } from "react";
 import axios from "axios";
 import { useLocation } from "react-router";
 import { Context } from "../context/Context";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function SinglePost() {
   const location = useLocation();
@@ -26,6 +27,9 @@ function SinglePost() {
       setDesc(res.data.desc);
     };
     getPost()
+
+    AOS.init({duration: 2000});
+
   }, [path]);
 
   const handleDelete = async () => {
@@ -71,7 +75,7 @@ function SinglePost() {
               )}
             </h1>
           )}
-        <div className="singlePostInfo">
+        <div className="singlePostInfo"data-aos="fade-up">
           <span className="postAuthor">Author:
             <Link to={`/?user=${post.username}`} className="link">
               <b>{post.username}</b>
@@ -80,7 +84,7 @@ function SinglePost() {
           <span className="postDate">
             {new Date(post.createdAt).toDateString()}
           </span>
-        </div>
+        
         {updateMode ? (
           <textarea className="postDescInput" value={desc} onChange={(e)=>setDesc(e.target.value)}/>
         ):(
@@ -89,6 +93,7 @@ function SinglePost() {
           {updateMode && (
           <button className="postButton" onClick={handleUpdate}>Update</button>
           )}
+      </div>
       </div>
     </div>
   );
