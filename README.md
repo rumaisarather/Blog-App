@@ -1,4 +1,5 @@
-#React Blog Application Readme
+##React Blog Application Readme
+
 #Overview
 This React-based blog application allows users to register, login, and share their favorite blogs. The application utilizes Node.js, MongoDB, Express, Axios, Multer, and Path for seamless functionality.
 
