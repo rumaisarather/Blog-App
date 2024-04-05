@@ -4,8 +4,8 @@
   "description": "Node js connection",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build":"npm install"
+    "start": "nodemon index.js",
+   
   },
   "author": "Ruma",
   "license": "ISC",
