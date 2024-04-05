@@ -41,7 +41,6 @@ function SinglePost() {
     } catch (err) {
     }
   };
-  
 
   const handleUpdate = async()=>{
     try {
@@ -50,8 +49,7 @@ function SinglePost() {
        title,
        desc,
       });
-       window.location.reload();
-      
+       setUpdateMode(false) 
     } catch (err) {
     }
   };
@@ -84,7 +82,6 @@ function SinglePost() {
           <span className="postDate">
             {new Date(post.createdAt).toDateString()}
           </span>
-        
         {updateMode ? (
           <textarea className="postDescInput" value={desc} onChange={(e)=>setDesc(e.target.value)}/>
         ):(
@@ -98,6 +95,5 @@ function SinglePost() {
     </div>
   );
         }
-
 
 export default SinglePost;
