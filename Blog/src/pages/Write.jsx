@@ -11,8 +11,7 @@ function Write() {
 const {user} = useContext(Context);
 
   const handleSubmit = async(e)=>{
-  e.preventDefault();
-  
+  e.preventDefault(); 
   const newPost= {
     username:user.username,
     title,
@@ -26,18 +25,14 @@ const {user} = useContext(Context);
     newPost.photo = filename;
     try{
 await axios.post("http://localhost:3000/api/upload",data);
-    }catch(err){
-
-    }
+    }catch(err){}
   }
   try{
     const res = await axios.post("http://localhost:3000/api/posts", newPost);
-    window.location.replace("http://localhost:3000/api/posts/" + res.data._id);
-  }catch(err){
-
-  }
-
+    window.location.replace("/");
+  }catch(err){}
   };
+  
   return (
     <div className="write">
       {file && (
