@@ -43,11 +43,6 @@ app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
  app.use("/api/category", categoryRoute);
 
-//   app.use((req,res,next)=>{
-//    res.setHeader('Cache-Control','no-store,no-cache,must-revalidate');
-//    res.setHeader('Expires','Thu,01 Jan 1970 00:00:00 GMT');
-//     next();
-//   });
 app.get('/',(req,res)=>{
     res.setHeader('Content-Type','application/json');
     const jsonData = {message:'hello'};
