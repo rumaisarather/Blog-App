@@ -32,12 +32,6 @@ function Sidebar() {
             </Link>
             
           ))}
-          
-          {/* <li className="sidebarListItem">Travel</li>
-          <li className="sidebarListItem">Technology</li>
-          <li className="sidebarListItem">Nature</li>
-          <li className="sidebarListItem">Interest</li>
-          <li className="sidebarListItem">Others</li> */}
         </ul>
       </div>
       <div className="category">
