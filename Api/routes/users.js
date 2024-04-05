@@ -27,31 +27,22 @@ router.put("/:id", async (req,res) => {
 });
 
 // DELETED
-router.delete("/:id", async (req,res) => {
-    if(req.body.userId === req.params.id) {
-    try{
-        const user = await UserfindById(req.params.id);
-       try{
-        await Post.deleteMany({ userId: user.userid });
-       await User.findByIdAndDelete(req.params.id);
-        res.status(200).json("user has been deleted..");
-        } catch (err){
-        res.status(500).json(err);
+router.delete("/:id",async(req,res)=>{
+    if(req.body.userId === req.params.id || req.body.isAdmin) {
+  
+  try{
+      await User.findByIdAndDelete(req.params.id);
+      res.status(200).json("Account deleted successfuly");
+  }catch(err){
+      return res.status(500).json(err);
+  }
+    } else {
+      return res.status(403).json("you can update only account");
     }
-}catch(err){
-    res.status(404).json("user not found!");
-}
-} else {
-    res.status(401).json("you can delete only your account");
-}
-});
+  });
 
 // GET USER
 router.get("/:id", async (req,res)=>{
-    const jsonData = User;
-    res.setHeader('Content-Type','application/json');
-    res.status(200).json(jsonData);
-
     try{
         const user = await User.findById(req.params.id);
         const {password, ...others} = user._doc;
